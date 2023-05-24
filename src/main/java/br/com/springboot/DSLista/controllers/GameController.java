@@ -7,10 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import br.com.springboot.DSLista.dto.GameDTO;
 import br.com.springboot.DSLista.dto.GameMinDTO;
-import br.com.springboot.DSLista.entities.Game;
 import br.com.springboot.DSLista.services.GameService;
 
 @RestController
@@ -18,7 +16,7 @@ import br.com.springboot.DSLista.services.GameService;
 public class GameController {
 
 	@Autowired
-	private GameService gameService;
+	private GameService gameService;	
 
 	@GetMapping(value = "/{id}")
 	public GameDTO findById(@PathVariable Long id) {
