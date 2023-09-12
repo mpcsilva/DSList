@@ -2,9 +2,9 @@ package br.com.springboot.DSLista.entities;
 
 import java.util.Objects;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_belonging")
